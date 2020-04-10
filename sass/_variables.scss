@@ -1,0 +1,58 @@
+//colores
+$rojo: hsl(0, 94%, 66%);
+$negro:hsl(229, 31%, 21%);
+$gris:hsl(229, 8%, 60%);
+$azul:hsl(231, 69%, 60%);
+
+//container
+.contenedor{
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+//botones
+.boton1 {
+    border: 2px solid $rojo;
+    background-color: $rojo;
+    padding: 8px 30px;
+    border-radius: 5px;
+    color: white !important;
+    text-decoration: none;
+    margin: 10px auto;
+    &:hover{
+        transition: all .2s;
+        background-color: transparent !important;
+        color: $rojo !important;
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.192);
+    }
+}
+
+.boton2 {
+    border: 2px solid $azul;
+    background-color: $azul;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white !important;
+    margin: 10px 10px;
+    &:hover{
+        transition: all .2s;
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.192);
+        background-color: transparent;
+        color: $azul !important;
+    }
+}
+
+.boton3 {
+    border: 2px solid white;
+    background-color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: $negro !important;
+    margin: 10px 10px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.295);
+    &:hover{
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.192);
+    }
+}

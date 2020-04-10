@@ -1,0 +1,286 @@
+@import './variables';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+//header
+.header{ 
+    width: 100%;
+    height: 100vh;
+    .divHeader{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        //menu
+        .divMenu {
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            div {
+                width: 40%;
+            }
+            //control del menu
+            nav {
+                width: 60%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                div {
+                    width: 18%;
+                    a {
+                        font-weight: normal;
+                        text-decoration: none;
+                        color: $negro;
+                        &:hover{
+                            transition: all .2s;
+                            color: $rojo;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    //seccion bienvenida
+    .seccionBienvenida{
+        width: 100%;
+        .divSecBienv{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .text {
+                width: 50%;
+                height: 50vh;
+                margin: 100px 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    .boton2{
+                        margin: 10px 0px !important;
+                    }
+
+                    h1 {
+                        font-size: 40px;
+                        color: $negro;
+                        font-weight: 500;
+                        padding: 10px 0px;
+                    }
+                    p {
+                        padding: 10px 0px;
+                        color: $gris;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .divImg{
+                width: 50%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                margin: 50px 0px;
+                padding: 30px 0px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.seccionFeatures{
+    width: 100%;
+    .divSecFeatures{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            text-align: center;
+            padding: 20px 0px;
+            h1 {
+                font-size: 35px;
+                color: $negro;
+            }
+            p {
+                color: $gris;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+.seccionCarousel {
+    width: 100%;
+    .padreCarousel {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+        justify-content: center;
+        align-items: center;
+        .divClickCarousel{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid $gris;
+            justify-content: center;
+            align-items: center;
+            #default{
+                border-bottom: 2px solid $rojo;
+            }
+            a {
+                width: 30%;
+                padding-bottom: 30px;
+                margin: 0 40px;
+                text-align: center;
+                text-decoration: none;
+                border-bottom: 2px solid transparent;
+                transition: all .2s;
+                &:focus{
+
+                    border-bottom: 2px solid $rojo;
+                }
+                p{
+                    font-size: 18px;
+                    color: $negro;
+                    font-weight: 500 !important;
+                    transition: all .2s;
+                    &:hover {
+                        color: $rojo !important;
+                    }
+                }
+            }
+        }
+        .divSecCarousel{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 30px 0px;
+            margin: 30px 0px;
+            .carro-1{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                overflow: hidden;
+                transition: all .2s;
+                div {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    transition: all .2s;
+                    img {
+                        width: 70%;
+                        // transition: all .2s;
+                    }
+                    h1 {
+                        font-size: 35px;
+                        color: $negro;
+                        padding: 20px 0px;
+                    }
+                    p {
+                        padding: 20px 0px;
+                        font-size: 18px;
+                        color: $gris;
+                    }
+                    a {
+                        margin: 20px 0px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.seccionDescargar{
+    width: 100%;
+    padding: 0px 0px;
+    #intro{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+        margin: 10px 0px;
+        text-align: center;
+        h1 {
+            font-size: 35px;
+            color: $negro;
+            padding: 10px 0px;
+        }
+        p {
+            padding: 10px 0px;
+            color: $gris;
+            font-size: 18px;
+        }
+    }
+    .divSecDescarga{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 0px 0px;
+
+        #tar1{
+            margin-top: 0px;
+        }
+        #tar2{
+            margin-top: 30px;
+        }
+        #tar3{
+            margin-top: 60px;
+        }
+        .tarjeta{
+            width: 30%;
+            height: auto;
+            padding: 10px 20px;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.123);
+            border-radius: 20px;
+
+            div {
+                padding: 20px 0px;
+                text-align: center;
+                img {
+                    width: 80%;
+                }
+                h1 {
+                    padding: 5px 0px;
+                    font-size: 20px;
+                    color: $negro;
+                }
+                p {
+                    padding: 5px 0px;
+                    font-size: 18px;
+                    color: $gris;
+                }
+            }
+        }
+        
+    }
+}

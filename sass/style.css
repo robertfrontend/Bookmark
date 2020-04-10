@@ -1,0 +1,510 @@
+.contenedor {
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.boton1 {
+  border: 2px solid #fa5757;
+  background-color: #fa5757;
+  padding: 8px 30px;
+  border-radius: 5px;
+  color: white !important;
+  text-decoration: none;
+  margin: 10px auto;
+}
+
+.boton1:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  background-color: transparent !important;
+  color: #fa5757 !important;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.192);
+          box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.192);
+}
+
+.boton2 {
+  border: 2px solid #5368df;
+  background-color: #5368df;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white !important;
+  margin: 10px 10px;
+}
+
+.boton2:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.192);
+          box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.192);
+  background-color: transparent;
+  color: #5368df !important;
+}
+
+.boton3 {
+  border: 2px solid white;
+  background-color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #252b46 !important;
+  margin: 10px 10px;
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.295);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.295);
+}
+
+.boton3:hover {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.192);
+          box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.192);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+}
+
+.header .divHeader {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .divHeader .divMenu {
+  width: 100%;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .divHeader .divMenu div {
+  width: 40%;
+}
+
+.header .divHeader .divMenu nav {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .divHeader .divMenu nav div {
+  width: 18%;
+}
+
+.header .divHeader .divMenu nav div a {
+  font-weight: normal;
+  text-decoration: none;
+  color: #252b46;
+}
+
+.header .divHeader .divMenu nav div a:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  color: #fa5757;
+}
+
+.header .seccionBienvenida {
+  width: 100%;
+}
+
+.header .seccionBienvenida .divSecBienv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header .seccionBienvenida .divSecBienv .text {
+  width: 50%;
+  height: 50vh;
+  margin: 100px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header .seccionBienvenida .divSecBienv .text div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header .seccionBienvenida .divSecBienv .text div .boton2 {
+  margin: 10px 0px !important;
+}
+
+.header .seccionBienvenida .divSecBienv .text div h1 {
+  font-size: 40px;
+  color: #252b46;
+  font-weight: 500;
+  padding: 10px 0px;
+}
+
+.header .seccionBienvenida .divSecBienv .text div p {
+  padding: 10px 0px;
+  color: #9194a1;
+  line-height: 30px;
+}
+
+.header .seccionBienvenida .divSecBienv .divImg {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 50px 0px;
+  padding: 30px 0px;
+}
+
+.header .seccionBienvenida .divSecBienv .divImg img {
+  width: 100%;
+}
+
+.seccionFeatures {
+  width: 100%;
+}
+
+.seccionFeatures .divSecFeatures {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccionFeatures .divSecFeatures div {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.seccionFeatures .divSecFeatures div h1 {
+  font-size: 35px;
+  color: #252b46;
+}
+
+.seccionFeatures .divSecFeatures div p {
+  color: #9194a1;
+  line-height: 25px;
+}
+
+.seccionCarousel {
+  width: 100%;
+}
+
+.seccionCarousel .padreCarousel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccionCarousel .padreCarousel .divClickCarousel {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid #9194a1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccionCarousel .padreCarousel .divClickCarousel #default {
+  border-bottom: 2px solid #fa5757;
+}
+
+.seccionCarousel .padreCarousel .divClickCarousel a {
+  width: 30%;
+  padding-bottom: 30px;
+  margin: 0 40px;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.seccionCarousel .padreCarousel .divClickCarousel a:focus {
+  border-bottom: 2px solid #fa5757;
+}
+
+.seccionCarousel .padreCarousel .divClickCarousel a p {
+  font-size: 18px;
+  color: #252b46;
+  font-weight: 500 !important;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.seccionCarousel .padreCarousel .divClickCarousel a p:hover {
+  color: #fa5757 !important;
+}
+
+.seccionCarousel .padreCarousel .divSecCarousel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 30px 0px;
+  margin: 30px 0px;
+}
+
+.seccionCarousel .padreCarousel .divSecCarousel .carro-1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.seccionCarousel .padreCarousel .divSecCarousel .carro-1 div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.seccionCarousel .padreCarousel .divSecCarousel .carro-1 div img {
+  width: 70%;
+}
+
+.seccionCarousel .padreCarousel .divSecCarousel .carro-1 div h1 {
+  font-size: 35px;
+  color: #252b46;
+  padding: 20px 0px;
+}
+
+.seccionCarousel .padreCarousel .divSecCarousel .carro-1 div p {
+  padding: 20px 0px;
+  font-size: 18px;
+  color: #9194a1;
+}
+
+.seccionCarousel .padreCarousel .divSecCarousel .carro-1 div a {
+  margin: 20px 0px;
+}
+
+.seccionDescargar {
+  width: 100%;
+  padding: 0px 0px;
+}
+
+.seccionDescargar #intro {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.seccionDescargar #intro h1 {
+  font-size: 35px;
+  color: #252b46;
+  padding: 10px 0px;
+}
+
+.seccionDescargar #intro p {
+  padding: 10px 0px;
+  color: #9194a1;
+  font-size: 18px;
+}
+
+.seccionDescargar .divSecDescarga {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px 0px;
+}
+
+.seccionDescargar .divSecDescarga #tar1 {
+  margin-top: 0px;
+}
+
+.seccionDescargar .divSecDescarga #tar2 {
+  margin-top: 30px;
+}
+
+.seccionDescargar .divSecDescarga #tar3 {
+  margin-top: 60px;
+}
+
+.seccionDescargar .divSecDescarga .tarjeta {
+  width: 30%;
+  height: auto;
+  padding: 10px 20px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.123);
+          box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.123);
+  border-radius: 20px;
+}
+
+.seccionDescargar .divSecDescarga .tarjeta div {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.seccionDescargar .divSecDescarga .tarjeta div img {
+  width: 80%;
+}
+
+.seccionDescargar .divSecDescarga .tarjeta div h1 {
+  padding: 5px 0px;
+  font-size: 20px;
+  color: #252b46;
+}
+
+.seccionDescargar .divSecDescarga .tarjeta div p {
+  padding: 5px 0px;
+  font-size: 18px;
+  color: #9194a1;
+}
+/*# sourceMappingURL=style.css.map */

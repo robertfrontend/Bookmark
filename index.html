@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <!--rubik font-->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <!--mi Css-->
+  <link rel="stylesheet" href="./sass/style.css">
+
+</head>
+<body>
+
+  <main>
+    <header class="header">
+      <div class="contenedor">
+        <div class="divHeader">
+          <!--menu-->
+          <div class="divMenu">
+            <div>
+              <img src="./images/logo-bookmark.svg" alt="">
+            </div>
+            <nav>
+              <div>
+                <a href="#">Features</a>
+              </div>
+              <div>
+                <a href="#">Pricing</a>
+              </div>
+              <div>
+                <a href="#">Contact</a>
+              </div>
+              <div>
+                <a href="#" class="boton1">Login</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <section class="seccionBienvenida">
+            <div class="contenedor">
+              <div class="divSecBienv">
+                <div class="text">
+                  <div>
+                    <h1>A Simple Bookmark <br>
+                      Manager
+                    </h1>
+                  </div>
+                  <div>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                      Hic officiis quibusdam aliquam debitis, deleniti exercitationem <br>
+                      nesciunt eius dolorum aliquid eaque?
+                    </p>
+                  </div>
+                  <div class="dBtn">
+                    <a href="#" class="boton2">Get in on Chrome</a>
+                    <a href="#" class="boton3">Get in on FireFox</a>
+                  </div>
+                </div>
+                <div class="divImg">
+                  <img src="./images/illustration-hero.svg" alt="">
+                </div>
+              </div>
+            </div>
+      </section>
+
+    </header>
+
+    <section class="seccionFeatures">
+      <div class="contenedor">
+        <div class="divSecFeatures">
+          <div>
+            <h1>Features</h1>
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+               In ad repudiandae voluptatum saepe sint laboriosam assumenda <br>
+               reiciendis rerum nesciunt nulla?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccionCarousel">
+      <div class="contenedor">
+        <div class="padreCarousel">
+
+          <div class="divClickCarousel">
+            <a id="default" href="#e" onclick="mostrarSiguiente1()" >
+              <p>Simple Bookmarking</p>
+            </a>
+            <a id="aCar" href="#e" onclick="mostrarSiguiente2()">
+              <p>Simple Bookmarking</p>
+            </a>
+            <a id="aCar" href="#e" onclick="mostrarSiguiente3()" >
+              <p>Simple Bookmarking</p>
+            </a>
+          </div>
+  
+          <div class="divSecCarousel">
+
+            <div class="carro-1">
+              <div>
+                <img id="imagenCarousel" src="./images/illustration-features-tab-1.svg" alt="">
+              </div>
+              <div>
+                <h1 id="textoCarousel" >Bookmark in once click</h1>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                  Rerum fugiat in illo deleniti nulla fuga commodi recusandae laudantium amet quisquam!
+                </p>
+                <a href="#" class="boton2">More info</a>
+              </div>
+            </div>
+
+          </div>  
+
+        </div>
+      </div>
+    </section>
+
+    <section class="seccionDescargar">
+      <div id="intro">
+        <h1>
+          Download the extension
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus <br>
+          suscipit dolores harum quasi voluptates eos!
+        </p>
+      </div>
+      <div class="contenedor">
+        <div class="divSecDescarga">
+
+          <div class="tarjeta" id="tar1">
+            <div>
+              <img src="./images/logo-chrome.svg" alt="">
+            </div>
+            <div>
+              <h1>Add to Chrome</h1>
+              <p>Menimum version 62</p>
+            </div>
+            <div>
+              <img src="./images/bg-dots.svg" alt="">
+            </div>
+            <div>
+              <a href="#" class="boton2">Add & Install Extension</a>
+            </div>
+          </div>
+
+          <div class="tarjeta" id="tar2">
+            <div>
+              <img src="./images/logo-firefox.svg" alt="">
+            </div>
+            <div>
+              <h1>Add to FireFox</h1>
+              <p>Menimum version 62</p>
+            </div>
+            <div>
+              <img src="./images/bg-dots.svg" alt="">
+            </div>
+            <div>
+              <a href="#" class="boton2">Add & Install Extension</a>
+            </div>
+          </div>
+
+          <div class="tarjeta" id="tar3">
+            <div>
+              <img src="./images/logo-opera.svg" alt="">
+            </div>
+            <div>
+              <h1>Add to Opera</h1>
+              <p>Menimum version 62</p>
+            </div>
+            <div>
+              <img src="./images/bg-dots.svg" alt="">
+            </div>
+            <div>
+              <a href="#" class="boton2">Add & Install Extension</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="seccionQuestion">
+      <div class="contenedor">
+        <div class="divQuestion">
+
+          
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+  <!--mi script-->
+  <script src="./js/script.js"></script>
+</body>
+</html>
