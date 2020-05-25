@@ -4,6 +4,11 @@ $negro:hsl(229, 31%, 21%);
 $gris:hsl(229, 8%, 60%);
 $azul:hsl(231, 69%, 60%);
 
+// responsive
+
+$breackPoint12: 1250px;
+$breckPoint999: 999px;
+
 //container
 .contenedor{
     margin-left: 12%;
@@ -14,7 +19,7 @@ $azul:hsl(231, 69%, 60%);
 .boton1 {
     border: 2px solid $rojo;
     background-color: $rojo;
-    padding: 8px 30px;
+    padding: 8px 20px;
     border-radius: 5px;
     color: white !important;
     text-decoration: none;
@@ -25,6 +30,16 @@ $azul:hsl(231, 69%, 60%);
         color: $rojo !important;
         box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.192);
     }
+
+    @media screen and(max-width:$breckPoint999){
+        padding: 6px 18px;
+    }
+    @media screen and(max-width: 450px ){
+        padding: 6px 10px !important;
+        font-size: 14px;
+
+    }
+    
 }
 
 .boton2 {
@@ -41,6 +56,13 @@ $azul:hsl(231, 69%, 60%);
         background-color: transparent;
         color: $azul !important;
     }
+    @media screen and(max-width:$breckPoint999){
+        padding: 6px 18px;
+    }
+    @media screen and(max-width: 450px ){
+        padding: 6px 10px !important;
+        font-size: 14px;
+    }
 }
 
 .boton3 {
@@ -55,4 +77,13 @@ $azul:hsl(231, 69%, 60%);
     &:hover{
         box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.192);
     }
+    @media screen and(max-width:$breckPoint999){
+        padding: 6px 18px;
+    }
+    @media screen and(max-width: 450px ){
+        padding: 6px 10px !important;
+        font-size: 14px;
+
+    }
 }
+

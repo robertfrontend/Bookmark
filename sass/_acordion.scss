@@ -1,0 +1,210 @@
+@mixin acordionCard {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(128, 128, 128, 0.356);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.356);
+    overflow: hidden;
+    transition: all .2s;
+    margin: 2px 0px;
+    @media screen and(max-width:$breckPoint999){
+        margin: 5px 0px;
+    }
+    a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        text-decoration: none;
+        padding:20px 0px;
+    }
+    a >  div {
+        padding: 0px 10px;
+        p{
+            color: $negro;
+            font-size: 18px;
+            font-weight:500;
+        }
+        img {
+            width: 20px;
+        }
+    }
+}
+
+
+.seccionQuestion{
+    width: 100%;
+    .divQuestion {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0px;
+        .freeQ {
+            width: 50%;
+            text-align: center;
+            padding: 20px 0px;
+            div {
+                padding: 10px 0px;
+                h1 {
+                    color: $negro;
+                    font-size: 35px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: $gris;
+                }
+            }
+        }
+        //----padre acordion-----
+        .acordionPadre{
+            margin: 10px 0px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            //background-color: red;
+        
+            // acordion 1
+            .acordionCard-1{
+                @include acordionCard();
+
+                .divButtonAcordion{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .divOculto{
+                    padding: 10px;
+                    p {
+                        color: $gris;
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                }
+            }
+            // fin acordion 1
+
+            // acordion 2
+            .acordionCard-2{
+                @include acordionCard();
+                border-top: none;
+                
+                .divButtonAcordion2{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .divOculto2{
+                    padding: 10px;
+                    p {
+                        color: $gris;
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                }
+            }
+
+            // acordion 3
+            .acordionCard-3{
+                @include acordionCard();
+                border-top: none;
+                
+                .divButtonAcordion3{
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                .divOculto3{
+                    padding: 10px;
+                    p {
+                        color: $gris;
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                }
+            }
+
+            // acordion 4
+            .acordionCard-4{
+                @include acordionCard();
+                border-top: none;
+                
+                .divButtonAcordion4{
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                .divOculto4{
+                    padding: 10px;
+                    p {
+                        color: $gris;
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+        @media screen and(max-width:$breckPoint999){
+            .freeQ{
+                width: 100%;
+            }
+            .acordionPadre{
+                width: 100%;
+                a{
+                    width: 100%;
+                    justify-content: space-around !important;
+                    align-items: center !important;
+                    overflow: hidden;
+                    div {
+                        width: 80% !important;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 0 !important;
+                        overflow: hidden !important;
+                    }
+                    padding: 5px 0px;
+                    #arrow {
+                        width: 20% !important;
+                        justify-content: flex-end !important;
+                    }
+                    p {
+                        font-size: 14px !important;
+                    }
+                }
+                .divOculto{
+                    text-align: left;
+
+                }
+                .divOculto2{
+                    text-align: left;
+                }
+                .divOculto3{
+                    text-align: left;
+
+                }
+                .divOculto4{
+                    text-align: left;
+
+                }
+            }
+        }
+        
+    }
+    .divBotonQuestion{
+        width: 100%;
+        padding: 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+.activarAcord{
+    height: auto !important;
+}

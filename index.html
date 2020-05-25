@@ -9,7 +9,7 @@
   <title>Frontend Mentor | Bookmark landing page</title>
 
   <!--rubik font-->
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
 
   <!--mi Css-->
   <link rel="stylesheet" href="./sass/style.css">
@@ -18,65 +18,87 @@
 <body>
 
   <main>
+    <!--inicio header-->
     <header class="header">
-      <div class="contenedor">
-        <div class="divHeader">
+      <div class="contenedor"> <!--contenedor-->
+        <div class="divHeader"><!--control header-->
           <!--menu-->
-          <div class="divMenu">
+          <div class="divMenu"> <!--Inicio menuS-->
             <div>
-              <img src="./images/logo-bookmark.svg" alt="">
+              <img id="logo" src="./images/logo-bookmark-black.svg" alt="">
             </div>
-            <nav>
+            <nav id="nav">
               <div>
-                <a href="#">Features</a>
+                <a href="#Features">Features</a>
               </div>
               <div>
-                <a href="#">Pricing</a>
+                <a href="#Features">Features</a>
               </div>
               <div>
-                <a href="#">Contact</a>
+                <a href="#Contact">Contact</a>
               </div>
               <div>
-                <a href="#" class="boton1">Login</a>
+                <a href="#Login" class="boton1">Login</a>
               </div>
             </nav>
-          </div>
-        </div>
-      </div>
+            <div class="divIconoMenu" >
+              <img id="botonMenu" src="./images/icon-hamburger.svg" alt="">
+            </div>
+          </div><!--div Menu fin-->
 
+        </div><!--control header fin-->
+
+      </div><!--contenedor-->
+
+      <!--Seccion de bienvenida-->
       <section class="seccionBienvenida">
-            <div class="contenedor">
-              <div class="divSecBienv">
-                <div class="text">
-                  <div>
+
+            <div class="contenedor"><!--contenedor-->
+
+              <div class="divSecBienv"> <!--Div seccion bienvenida-->
+
+                <div class="text"><!--div text-->
+
+                  <div> <!--div texto Bienvenida-->
                     <h1>A Simple Bookmark <br>
                       Manager
                     </h1>
-                  </div>
-                  <div>
+                  </div><!--fin texto bienvenida-->
+
+                  <div><!--div pf bienvenida-->
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
                       Hic officiis quibusdam aliquam debitis, deleniti exercitationem <br>
                       nesciunt eius dolorum aliquid eaque?
                     </p>
-                  </div>
-                  <div class="dBtn">
-                    <a href="#" class="boton2">Get in on Chrome</a>
-                    <a href="#" class="boton3">Get in on FireFox</a>
-                  </div>
-                </div>
-                <div class="divImg">
+                  </div><!--fin pf bienvenida-->
+                  
+                  <div class="dBtn"><!--div botones bienvenida-->
+                    <a href="#Get" class="boton2">Get in on Chrome</a>
+                    <a href="#Get" class="boton3">Get in on FireFox</a>
+                  </div><!--fin botones bienvenida-->
+
+                </div><!--fin div text-->
+
+                <div class="divImg"><!--div imagen bienvenida-->
                   <img src="./images/illustration-hero.svg" alt="">
-                </div>
-              </div>
-            </div>
-      </section>
+                  <div class="sesgo"></div>
+                </div><!--fin div imagen bienvenida-->
 
+              </div><!--fin div seccion bienvenida-->
+
+            </div><!--fin contenedor-->
+
+      </section><!--Fin de seccion Bienvenida-->
     </header>
+    <!--Fin header-->
 
-    <section class="seccionFeatures">
-      <div class="contenedor">
-        <div class="divSecFeatures">
+    <section class="seccionFeatures"><!--seccion features-->
+      
+      <div class="contenedor"><!--contenedor-->
+        
+        <div class="divSecFeatures"> <!--div features-->
+
           <div>
             <h1>Features</h1>
             <br>
@@ -86,50 +108,69 @@
                reiciendis rerum nesciunt nulla?
             </p>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="seccionCarousel">
-      <div class="contenedor">
-        <div class="padreCarousel">
+        </div><!--fin div feaures-->
 
+      </div><!--fin conteneodr-->
+
+    </section><!--fin seccion features-->
+
+    <section class="seccionCarousel"> <!--seccion Carousel-->
+
+      <div class="contenedor"> <!--conteneodr-->
+
+        <div class="padreCarousel"><!--padre carousel-->
+
+          <!--div botones para navegar en el carousel-->
           <div class="divClickCarousel">
-            <a id="default" href="#e" onclick="mostrarSiguiente1()" >
-              <p>Simple Bookmarking</p>
-            </a>
-            <a id="aCar" href="#e" onclick="mostrarSiguiente2()">
-              <p>Simple Bookmarking</p>
-            </a>
-            <a id="aCar" href="#e" onclick="mostrarSiguiente3()" >
-              <p>Simple Bookmarking</p>
-            </a>
-          </div>
-  
-          <div class="divSecCarousel">
 
-            <div class="carro-1">
+            <a id="default" href="#SimpleBookmarking" onclick="mostrarSiguiente1()" >
+              <p>Simple Bookmarking</p>
+            </a>
+
+            <a id="aCar" href="#SpeedySearching" onclick="mostrarSiguiente2()">
+              <p>Speedy Searching</p>
+            </a>
+
+            <a id="aCar" href="#EasySharing" onclick="mostrarSiguiente3()" >
+              <p>Easy Sharing</p>
+            </a>
+
+          </div>
+          <!--fin de botones navegar carousel-->
+  
+          <div class="divSecCarousel"><!--div carousel-->
+
+            <div class="carro-1"><!--carousel adentro-->
+
               <div>
                 <img id="imagenCarousel" src="./images/illustration-features-tab-1.svg" alt="">
               </div>
+
               <div>
                 <h1 id="textoCarousel" >Bookmark in once click</h1>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
                   Rerum fugiat in illo deleniti nulla fuga commodi recusandae laudantium amet quisquam!
                 </p>
-                <a href="#" class="boton2">More info</a>
+                <a href="#More" class="boton2">More info</a>
               </div>
-            </div>
 
-          </div>  
+            </div><!--fin de carousel adentro-->
 
-        </div>
-      </div>
-    </section>
+          </div> <!--fin carousel-->
 
-    <section class="seccionDescargar">
-      <div id="intro">
+        </div><!--fin padre carousel-->
+
+      </div><!--contenedor-->
+
+    </section><!--fin de seccion carousel-->
+
+
+    <section class="seccionDescargar"><!--seccion de descargas-->
+
+      <div id="intro"><!--div intro descargar-->
+
         <h1>
           Download the extension
         </h1>
@@ -137,81 +178,276 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus <br>
           suscipit dolores harum quasi voluptates eos!
         </p>
-      </div>
-      <div class="contenedor">
-        <div class="divSecDescarga">
+        
+      </div><!--fin intro descargar-->
 
+      <div class="contenedor"><!--contenedor-->
+        
+        <div class="divSecDescarga"><!--div Decargas-->
+
+          <!--Tarjeta CHROME-->
           <div class="tarjeta" id="tar1">
+
             <div>
               <img src="./images/logo-chrome.svg" alt="">
             </div>
+            
             <div>
               <h1>Add to Chrome</h1>
               <p>Menimum version 62</p>
             </div>
+
             <div>
               <img src="./images/bg-dots.svg" alt="">
             </div>
-            <div>
-              <a href="#" class="boton2">Add & Install Extension</a>
-            </div>
-          </div>
 
+            <div>
+              <a href="#Add" class="boton2">Add & Install Extension</a>
+            </div>
+
+          </div>
+          <!--fin tarjeta CHROME-->
+
+          <!--Tarjeta FireFox-->
           <div class="tarjeta" id="tar2">
+
             <div>
               <img src="./images/logo-firefox.svg" alt="">
             </div>
+
             <div>
               <h1>Add to FireFox</h1>
               <p>Menimum version 62</p>
             </div>
+
             <div>
               <img src="./images/bg-dots.svg" alt="">
             </div>
-            <div>
-              <a href="#" class="boton2">Add & Install Extension</a>
-            </div>
-          </div>
 
+            <div>
+              <a href="#Add" class="boton2">Add & Install Extension</a>
+            </div>
+
+          </div>
+          <!--fin tarjeta FireFox-->
+
+          <!--Tarjeta Opera-->
           <div class="tarjeta" id="tar3">
+
             <div>
               <img src="./images/logo-opera.svg" alt="">
             </div>
+
             <div>
               <h1>Add to Opera</h1>
               <p>Menimum version 62</p>
             </div>
+
             <div>
               <img src="./images/bg-dots.svg" alt="">
             </div>
+
             <div>
-              <a href="#" class="boton2">Add & Install Extension</a>
+              <a href="#Add" class="boton2">Add & Install Extension</a>
             </div>
+
+          </div>
+          <!--fin tarjeta Opera-->
+
+        </div><!--fin div descargas-->
+
+      </div><!--contenedor-->
+
+    </section><!--fin seccion descargas-->
+
+
+    <section class="seccionQuestion"><!--seccion questions-->
+
+      <div class="contenedor"><!--contendor-->
+
+        <div class="divQuestion"> <!--div Question-->
+
+          <div class="freeQ"><!--div texto question-->
+            <div><!--texto question-->
+              <h1>Frequently Asked Questions</h1>
+            </div>
+
+            <div>
+              <p>Here are some of our FAQs. If you have any other questions <br>
+                you'd like answered please feel free to email us.
+              </p>
+            </div>
+          </div><!--fin texto question-->
+
+          <!--Acordion-->
+          <div class="acordionPadre"> <!--acordion Padre-->
+
+            <div class="acordionCard-1"><!--acordion card 1-->
+              <div class="divButtonAcordion">
+                <a href="#s" onclick="activarOculto();" id="botonMostrarAcordion" class="linkAcor">
+                  <div>
+                   <p> What is Bookmark?</p>
+                  </div>
+                  <div id="arrow">
+                    <img id="iconArrow" src="./images/icon-arrow.svg" alt="">
+                  </div>
+                </a>
+                <div class="divOculto">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Laboriosam quaerat beatae quia qui, rerum nostrum voluptates
+                    porro amet tempora. Aliquid impedit ex repellat accusantium 
+                    ducimus architecto vero magni provident nobis.
+                  </p>
+                </div>
+              </div>
+            </div><!--fin acordion card 4-->
+
+            <div class="acordionCard-2"><!--acordion card 2-->
+              <div class="divButtonAcordion2">
+                <a href="#s" onclick="activarOculto2();" id="botonMostrarAcordion" class="linkAcor">
+                  <div>
+                   <p>How can I request a new browser?</p>
+                  </div>
+                  <div id="arrow">
+                    <img src="./images/icon-arrow.svg" alt="">
+                  </div>
+                </a>
+                <div class="divOculto2">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Laboriosam quaerat beatae quia qui, rerum nostrum voluptates
+                    porro amet tempora. Aliquid impedit ex repellat accusantium 
+                    ducimus architecto vero magni provident nobis.
+                  </p>
+                </div>
+              </div>
+            </div><!-- fin acordion card 2-->
+
+            <div class="acordionCard-3"><!--acordion card 3-->
+              <div class="divButtonAcordion3">
+                <a href="#s" onclick="activarOculto3();" id="botonMostrarAcordion" class="linkAcor">
+                  <div>
+                   <p> Is there a mobile app?</p>
+                  </div>
+                  <div id="arrow">
+                    <img src="./images/icon-arrow.svg" alt="">
+                  </div>
+                </a>
+                <div class="divOculto3">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Laboriosam quaerat beatae quia qui, rerum nostrum voluptates
+                    porro amet tempora. Aliquid impedit ex repellat accusantium 
+                    ducimus architecto vero magni provident nobis.
+                  </p>
+                </div>
+              </div>
+            </div><!-- fin acordion card 3-->
+
+            <div class="acordionCard-4"><!--acordion card 4-->
+              <div class="divButtonAcordion4">
+                <a href="#s" onclick="activarOculto4();" id="botonMostrarAcordion" class="linkAcor">
+                  <div>
+                   <p>What about other Chromium brosers?</p>
+                  </div>
+                  <div id="arrow">
+                    <img src="./images/icon-arrow.svg" alt="">
+                  </div>
+                </a>
+                <div class="divOculto4">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Laboriosam quaerat beatae quia qui, rerum nostrum voluptates
+                    porro amet tempora. Aliquid impedit ex repellat accusantium 
+                    ducimus architecto vero magni provident nobis.
+                  </p>
+                </div>
+              </div>
+            </div><!--fin acordion card 4-->
+
+          </div> <!--fin acordion padre-->
+
+          <div class="divBotonQuestion"> <!--div boton question-->
+            <a href="#" class="boton2">
+              More Info
+            </a>
+          </div><!--fin boton question-->
+          
+        </div> <!--fin div question-->
+
+      </div><!--fin contenedor-->
+
+    </section><!--fin seccion question-->
+
+    <section class="seccionFinal"> <!--seccion final-->
+      <div class="contenedor"><!--contenedor-->
+
+        <div class="divSecFinal"><!--div final-->
+
+          <div class="">
+            <p>35,000+ ALREADY JOINED</p>
+            <br>
+            <br>
+            <h1>Stay up-to-date with what <br>
+              we're doing
+            </h1>
           </div>
 
-        </div>
-      </div>
-    </section>
+          <div class="d-formulario">
+              <div>
+                <input id="inputEmail" required type="email" 
+                placeholder="Enter your email address" >
+                <a id="botonVali" href="#" class="boton1">Contact Us</a>
+              </div>
+              <div id="campoMal">
+                <!--alerta de llenar el input correctamente-->
+              </div>
+          </div><!--d-formulario-->
 
-    <section class="seccionQuestion">
+        </div><!--fin div final-->
+
+      </div><!--fin contenedor-->
+    </section><!--fin seccion final-->
+
+    <header class="headerFooter">
       <div class="contenedor">
-        <div class="divQuestion">
-
-          
-
+        <div class="divHeaderFooter">
+          <div class="logoFot">
+            <img src="./images/logo-bookmark-white.svg" alt="">
+          </div>
+          <nav>
+              <a href="#FEATURES">
+                FEATURES
+              </a>
+              <a href="#PRICING">
+                PRICING
+              </a>
+              <a href="#CONTACT">
+                CONTACT
+              </a>
+          </nav>
+          <div class="redes">
+            <img src="./images/icon-facebook.svg" alt="">
+            <img src="./images/icon-twitter.svg" alt="">
+          </div>
         </div>
       </div>
-    </section>
+    </header>
 
-  </main>
+  </main><!--MAIN-->
   
-  <!-- <footer>
+  <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#https://github.com/Robertrm0" target="_blank" >Robert Romero</a>.
     </p>
-  </footer> -->
+  </footer>
+
+
   <!--mi script-->
   <script src="./js/script.js"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
 </body>
 </html>

@@ -1,4 +1,6 @@
 @import './variables';
+@import './acordion';
+
 * {
     margin: 0;
     padding: 0;
@@ -8,12 +10,21 @@
 body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
+    @media screen and(max-width:$breckPoint999) {
+        p{
+            font-size: 14px !important;
+        }
+    }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 //header
 .header{ 
     width: 100%;
-    height: 100vh;
+    height: auto;
     .divHeader{
         width: 100%;
         display: flex;
@@ -28,6 +39,9 @@ body {
             align-items: center;
             div {
                 width: 40%;
+                img {
+                    width: 40%;
+                }
             }
             //control del menu
             nav {
@@ -49,6 +63,57 @@ body {
                     }
                 }
             }
+            .divIconoMenu {
+                display: none;
+            }
+        }
+
+        @media screen and(max-width:$breckPoint999) {
+            div {
+                width: 80% !important;
+                z-index: 100000;
+                img {
+                   width: 150px !important;
+                }
+            }
+            nav {
+                position: absolute;
+                top: -1000px;
+                right: 0;
+                width: 100% !important;
+                height: 100vh;
+                background-color: hsla(229, 31%, 21%, 0.952);
+                flex-direction: column !important;
+                position: fixed;
+                div {
+                    width: 80%;
+                    padding: 30px 0px;
+                    text-align: center;
+                    border-top: 1px solid $gris;
+                    a{
+                        font-size: 25px;
+                        font-weight: normal;
+                        color: white !important;
+                    }
+                    .boton1 {
+                        background-color: transparent !important;
+                        border: 2px solid white;
+                        padding: 8px 90px !important;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .divIconoMenu {
+                position: absolute;
+                width: 60%;
+                text-align: right;
+                z-index: 10000;
+                display: block !important;
+                img {
+                    z-index: 10000;
+                    width: 25px !important;
+                }
+            }
         }
         
     }
@@ -59,15 +124,18 @@ body {
             width: 100%;
             display: flex;
             flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
             .text {
                 width: 50%;
                 height: 50vh;
-                margin: 100px 0px;
+                margin: 100px auto;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
                 div{
+                    padding: 10px;
                     display: flex;
                     flex-direction: row;
                     .boton2{
@@ -92,10 +160,72 @@ body {
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-end;
-                margin: 50px 0px;
+                margin: 50px auto;
                 padding: 30px 0px;
                 img {
                     width: 100%;
+                    z-index: 10;
+                }
+                .sesgo{
+                    width: 40%;
+                    height: 40vh;
+                    background-color: $azul;
+                    position: absolute;
+                    top: 300px;
+                    right: 0;
+                    border-bottom-left-radius: 100px;
+                }
+            }
+            @media screen and(max-width:$breckPoint999) {
+                flex-direction: column-reverse;
+                .text{
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    margin: 50px 0px;
+                    padding:  0px ;
+                    h1 {
+                        font-size: 30px !important;
+                    }
+                    p {
+                        padding: 0px !important;
+                        margin: 0px !important;
+                        line-height: initial !important;
+                        font-size: 14px !important;
+                    }
+                }
+                .divImg{
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding: 10px 0px;
+                    margin: 10px 0px;
+                    img{
+                        width: 80%;
+                    }
+                    .sesgo{
+                        width: 60%;
+                        height: 50vh;
+                        top: 40%;
+                        @media screen and(max-width:747px){
+                            top: 30%;
+                            height: 40vh;
+                        }
+                        @media screen and(max-width:547px){
+                            top: 30%;
+                            height: 30vh;
+                        }
+                        @media screen and(max-width:410px){
+                            top: 25%;
+                            height: 30vh;
+                        }
+                        @media screen and(max-width:350px){
+                            top: 20%;
+                            height: 20vh;
+                        }
+                    }
                 }
             }
         }
@@ -166,6 +296,17 @@ body {
                 }
             }
         }
+        @media screen and(max-width:$breckPoint999){
+            .divClickCarousel{
+                width: 100%;
+                flex-wrap: wrap;
+                border-bottom: 1px solid $gris;
+                a{
+                    width: 100% !important;
+                    padding: 30px 0px;
+                }
+            }
+        }
         .divSecCarousel{
             width: 100%;
             display: flex;
@@ -201,6 +342,19 @@ body {
                     }
                     a {
                         margin: 20px 0px;
+                    }
+                }
+            }
+            @media screen and(max-width:$breckPoint999){
+                .carro-1{
+                    flex-wrap: wrap;
+                }
+                .carro-1 > div{
+                    width: 100%;
+                    align-items: center;
+                    text-align: center;
+                    img {
+                        width:40%;
                     }
                 }
             }
@@ -252,7 +406,7 @@ body {
             margin-top: 60px;
         }
         .tarjeta{
-            width: 30%;
+            width: 300px;
             height: auto;
             padding: 10px 20px;
             margin: 0px auto;
@@ -262,6 +416,10 @@ body {
             align-items: center;
             box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.123);
             border-radius: 20px;
+            @media screen and(max-width:$breckPoint999){
+                width: 400px;
+                margin: 20px 0px !important;
+            }
 
             div {
                 padding: 20px 0px;
@@ -281,6 +439,197 @@ body {
                 }
             }
         }
+
+        @media screen and(max-width:$breckPoint999){
+            justify-content: center;
+            align-items: center;
+            .tarjeta{
+                width: 400px;
+                margin: 20px 0px !important;
+            }
+        }
         
+    }
+}
+
+
+.seccionFinal{
+    width: 100%;
+    background-color: $azul;
+    .divSecFinal{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0px;
+        justify-content: center;
+        align-items: center;
+        div {
+            width: 50%;
+            padding: 10px 0px;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            p {
+                color: white;
+            }
+            h1 {
+                font-size: 30px;
+                color: white;
+                font-weight: 500;
+            } 
+            .d-formulario {
+                background: red;
+                
+            }
+             div{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                input {
+                    width: 250px;
+                    padding: 10px 10px;
+                    border: none;
+                    background-color: white;
+                    border-radius: 5px;
+    
+                    &:invalid{
+                        border: 3px solid $rojo;  
+                    }
+                    &:valid{
+                        border: 3px solid rgb(101, 240, 131);
+                    }
+                }
+                .boton1 {
+                    &:hover{
+                        background: white !important;
+                    }
+                }
+
+            }
+
+            // .divwar{
+            //     position: relative;
+            //     top: -5px;
+            //     width: 50%;
+            //     height: 3vh;
+            //     display: none;
+            //     text-align: center;
+            //     background-color: $rojo;
+            //     color: white;
+            //     margin-left: 62px;
+            //     font-size: 15px;
+            //     border-bottom-left-radius: 10px;
+            //     border-bottom-right-radius: 10px;
+            //     span {
+            //         position: relative;
+            //         top: -10px;
+            //     }
+            // }
+            #campoMal{
+                background-color: $rojo;
+                color: white;
+                width: 0%;
+                border-radius: 5px;
+            }
+        }
+        @media screen and(max-width:$breckPoint999){
+            div{
+                width: 100%;
+                input{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+
+.headerFooter{
+    width: 100%;
+    background-color: $negro;
+    .divHeaderFooter{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 20px 0px;
+        flex-wrap: wrap;
+
+        .logoFot{
+            width: 15%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            img {
+                width: 100%;
+            }
+        }
+        nav{
+            width: 35%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            
+            a {
+                text-decoration: none;
+                color: $gris;
+                padding: 0px 20px;
+                font-size: 15px;
+            }
+        }
+        .redes {
+            width: 45%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            img {
+                padding: 0px 10px;
+            }
+        }
+        @media screen and(max-width:$breackPoint12){
+            .logoFot {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                img {
+                    width: 30%;
+                }
+            }
+            nav {
+                width: 100%;
+                padding: 20px;
+                justify-content: center;
+                flex-direction: column;
+                a {
+                    padding: 10px;
+                }
+            }
+            .redes {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    background-color: $negro;
+    text-align: center;
+    padding: 10px 0px;
+    .attribution{
+        color: white;
+        a {
+            text-decoration: none;
+            color: $azul;
+        }
     }
 }

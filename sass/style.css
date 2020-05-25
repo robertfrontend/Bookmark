@@ -6,7 +6,7 @@
 .boton1 {
   border: 2px solid #fa5757;
   background-color: #fa5757;
-  padding: 8px 30px;
+  padding: 8px 20px;
   border-radius: 5px;
   color: white !important;
   text-decoration: none;
@@ -20,6 +20,19 @@
   color: #fa5757 !important;
   -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.192);
           box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.192);
+}
+
+@media screen and (max-width: 999px) {
+  .boton1 {
+    padding: 6px 18px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .boton1 {
+    padding: 6px 10px !important;
+    font-size: 14px;
+  }
 }
 
 .boton2 {
@@ -41,6 +54,19 @@
   color: #5368df !important;
 }
 
+@media screen and (max-width: 999px) {
+  .boton2 {
+    padding: 6px 18px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .boton2 {
+    padding: 6px 10px !important;
+    font-size: 14px;
+  }
+}
+
 .boton3 {
   border: 2px solid white;
   background-color: white;
@@ -58,6 +84,451 @@
           box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.192);
 }
 
+@media screen and (max-width: 999px) {
+  .boton3 {
+    padding: 6px 18px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .boton3 {
+    padding: 6px 10px !important;
+    font-size: 14px;
+  }
+}
+
+.seccionQuestion {
+  width: 100%;
+}
+
+.seccionQuestion .divQuestion {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0px;
+}
+
+.seccionQuestion .divQuestion .freeQ {
+  width: 50%;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.seccionQuestion .divQuestion .freeQ div {
+  padding: 10px 0px;
+}
+
+.seccionQuestion .divQuestion .freeQ div h1 {
+  color: #252b46;
+  font-size: 35px;
+}
+
+.seccionQuestion .divQuestion .freeQ div p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #9194a1;
+}
+
+.seccionQuestion .divQuestion .acordionPadre {
+  margin: 10px 0px;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-1 {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid rgba(128, 128, 128, 0.356);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.356);
+  overflow: hidden;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin: 2px 0px;
+}
+
+@media screen and (max-width: 999px) {
+  .seccionQuestion .divQuestion .acordionPadre .acordionCard-1 {
+    margin: 5px 0px;
+  }
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-1 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+  padding: 20px 0px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-1 a > div {
+  padding: 0px 10px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-1 a > div p {
+  color: #252b46;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-1 a > div img {
+  width: 20px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-1 .divButtonAcordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-1 .divOculto {
+  padding: 10px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-1 .divOculto p {
+  color: #9194a1;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-2 {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid rgba(128, 128, 128, 0.356);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.356);
+  overflow: hidden;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin: 2px 0px;
+  border-top: none;
+}
+
+@media screen and (max-width: 999px) {
+  .seccionQuestion .divQuestion .acordionPadre .acordionCard-2 {
+    margin: 5px 0px;
+  }
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-2 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+  padding: 20px 0px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-2 a > div {
+  padding: 0px 10px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-2 a > div p {
+  color: #252b46;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-2 a > div img {
+  width: 20px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-2 .divButtonAcordion2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-2 .divOculto2 {
+  padding: 10px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-2 .divOculto2 p {
+  color: #9194a1;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-3 {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid rgba(128, 128, 128, 0.356);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.356);
+  overflow: hidden;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin: 2px 0px;
+  border-top: none;
+}
+
+@media screen and (max-width: 999px) {
+  .seccionQuestion .divQuestion .acordionPadre .acordionCard-3 {
+    margin: 5px 0px;
+  }
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-3 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+  padding: 20px 0px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-3 a > div {
+  padding: 0px 10px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-3 a > div p {
+  color: #252b46;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-3 a > div img {
+  width: 20px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-3 .divButtonAcordion3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-3 .divOculto3 {
+  padding: 10px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-3 .divOculto3 p {
+  color: #9194a1;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-4 {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid rgba(128, 128, 128, 0.356);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.356);
+  overflow: hidden;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin: 2px 0px;
+  border-top: none;
+}
+
+@media screen and (max-width: 999px) {
+  .seccionQuestion .divQuestion .acordionPadre .acordionCard-4 {
+    margin: 5px 0px;
+  }
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-4 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+  padding: 20px 0px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-4 a > div {
+  padding: 0px 10px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-4 a > div p {
+  color: #252b46;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-4 a > div img {
+  width: 20px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-4 .divButtonAcordion4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-4 .divOculto4 {
+  padding: 10px;
+}
+
+.seccionQuestion .divQuestion .acordionPadre .acordionCard-4 .divOculto4 p {
+  color: #9194a1;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 999px) {
+  .seccionQuestion .divQuestion .freeQ {
+    width: 100%;
+  }
+  .seccionQuestion .divQuestion .acordionPadre {
+    width: 100%;
+  }
+  .seccionQuestion .divQuestion .acordionPadre a {
+    width: 100%;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    overflow: hidden;
+    padding: 5px 0px;
+  }
+  .seccionQuestion .divQuestion .acordionPadre a div {
+    width: 80% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+  .seccionQuestion .divQuestion .acordionPadre a #arrow {
+    width: 20% !important;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+  }
+  .seccionQuestion .divQuestion .acordionPadre a p {
+    font-size: 14px !important;
+  }
+  .seccionQuestion .divQuestion .acordionPadre .divOculto {
+    text-align: left;
+  }
+  .seccionQuestion .divQuestion .acordionPadre .divOculto2 {
+    text-align: left;
+  }
+  .seccionQuestion .divQuestion .acordionPadre .divOculto3 {
+    text-align: left;
+  }
+  .seccionQuestion .divQuestion .acordionPadre .divOculto4 {
+    text-align: left;
+  }
+}
+
+.seccionQuestion .divBotonQuestion {
+  width: 100%;
+  padding: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.activarAcord {
+  height: auto !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -70,9 +541,19 @@ body {
   font-weight: 400;
 }
 
+@media screen and (max-width: 999px) {
+  body p {
+    font-size: 14px !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .header .divHeader {
@@ -105,6 +586,10 @@ body {
 }
 
 .header .divHeader .divMenu div {
+  width: 40%;
+}
+
+.header .divHeader .divMenu div img {
   width: 40%;
 }
 
@@ -141,6 +626,61 @@ body {
   color: #fa5757;
 }
 
+.header .divHeader .divMenu .divIconoMenu {
+  display: none;
+}
+
+@media screen and (max-width: 999px) {
+  .header .divHeader div {
+    width: 80% !important;
+    z-index: 100000;
+  }
+  .header .divHeader div img {
+    width: 150px !important;
+  }
+  .header .divHeader nav {
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    width: 100% !important;
+    height: 100vh;
+    background-color: rgba(37, 43, 70, 0.952);
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    position: fixed;
+  }
+  .header .divHeader nav div {
+    width: 80%;
+    padding: 30px 0px;
+    text-align: center;
+    border-top: 1px solid #9194a1;
+  }
+  .header .divHeader nav div a {
+    font-size: 25px;
+    font-weight: normal;
+    color: white !important;
+  }
+  .header .divHeader nav div .boton1 {
+    background-color: transparent !important;
+    border: 2px solid white;
+    padding: 8px 90px !important;
+    font-weight: bold;
+  }
+  .header .divHeader .divIconoMenu {
+    position: absolute;
+    width: 60%;
+    text-align: right;
+    z-index: 10000;
+    display: block !important;
+  }
+  .header .divHeader .divIconoMenu img {
+    z-index: 10000;
+    width: 25px !important;
+  }
+}
+
 .header .seccionBienvenida {
   width: 100%;
 }
@@ -154,12 +694,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header .seccionBienvenida .divSecBienv .text {
   width: 50%;
   height: 50vh;
-  margin: 100px 0px;
+  margin: 100px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,6 +720,7 @@ body {
 }
 
 .header .seccionBienvenida .divSecBienv .text div {
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,12 +758,101 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin: 50px 0px;
+  margin: 50px auto;
   padding: 30px 0px;
 }
 
 .header .seccionBienvenida .divSecBienv .divImg img {
   width: 100%;
+  z-index: 10;
+}
+
+.header .seccionBienvenida .divSecBienv .divImg .sesgo {
+  width: 40%;
+  height: 40vh;
+  background-color: #5368df;
+  position: absolute;
+  top: 300px;
+  right: 0;
+  border-bottom-left-radius: 100px;
+}
+
+@media screen and (max-width: 999px) {
+  .header .seccionBienvenida .divSecBienv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .header .seccionBienvenida .divSecBienv .text {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: 50px 0px;
+    padding: 0px;
+  }
+  .header .seccionBienvenida .divSecBienv .text h1 {
+    font-size: 30px !important;
+  }
+  .header .seccionBienvenida .divSecBienv .text p {
+    padding: 0px !important;
+    margin: 0px !important;
+    line-height: initial !important;
+    font-size: 14px !important;
+  }
+  .header .seccionBienvenida .divSecBienv .divImg {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 10px 0px;
+  }
+  .header .seccionBienvenida .divSecBienv .divImg img {
+    width: 80%;
+  }
+  .header .seccionBienvenida .divSecBienv .divImg .sesgo {
+    width: 60%;
+    height: 50vh;
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 999px) and (max-width: 747px) {
+  .header .seccionBienvenida .divSecBienv .divImg .sesgo {
+    top: 30%;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 999px) and (max-width: 547px) {
+  .header .seccionBienvenida .divSecBienv .divImg .sesgo {
+    top: 30%;
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 999px) and (max-width: 410px) {
+  .header .seccionBienvenida .divSecBienv .divImg .sesgo {
+    top: 25%;
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 999px) and (max-width: 350px) {
+  .header .seccionBienvenida .divSecBienv .divImg .sesgo {
+    top: 20%;
+    height: 20vh;
+  }
 }
 
 .seccionFeatures {
@@ -328,6 +962,19 @@ body {
   color: #fa5757 !important;
 }
 
+@media screen and (max-width: 999px) {
+  .seccionCarousel .padreCarousel .divClickCarousel {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px solid #9194a1;
+  }
+  .seccionCarousel .padreCarousel .divClickCarousel a {
+    width: 100% !important;
+    padding: 30px 0px;
+  }
+}
+
 .seccionCarousel .padreCarousel .divSecCarousel {
   width: 100%;
   display: -webkit-box;
@@ -392,6 +1039,23 @@ body {
 
 .seccionCarousel .padreCarousel .divSecCarousel .carro-1 div a {
   margin: 20px 0px;
+}
+
+@media screen and (max-width: 999px) {
+  .seccionCarousel .padreCarousel .divSecCarousel .carro-1 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .seccionCarousel .padreCarousel .divSecCarousel .carro-1 > div {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .seccionCarousel .padreCarousel .divSecCarousel .carro-1 > div img {
+    width: 40%;
+  }
 }
 
 .seccionDescargar {
@@ -465,7 +1129,7 @@ body {
 }
 
 .seccionDescargar .divSecDescarga .tarjeta {
-  width: 30%;
+  width: 300px;
   height: auto;
   padding: 10px 20px;
   margin: 0px auto;
@@ -487,6 +1151,13 @@ body {
   border-radius: 20px;
 }
 
+@media screen and (max-width: 999px) {
+  .seccionDescargar .divSecDescarga .tarjeta {
+    width: 400px;
+    margin: 20px 0px !important;
+  }
+}
+
 .seccionDescargar .divSecDescarga .tarjeta div {
   padding: 20px 0px;
   text-align: center;
@@ -506,5 +1177,266 @@ body {
   padding: 5px 0px;
   font-size: 18px;
   color: #9194a1;
+}
+
+@media screen and (max-width: 999px) {
+  .seccionDescargar .divSecDescarga {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .seccionDescargar .divSecDescarga .tarjeta {
+    width: 400px;
+    margin: 20px 0px !important;
+  }
+}
+
+.seccionFinal {
+  width: 100%;
+  background-color: #5368df;
+}
+
+.seccionFinal .divSecFinal {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccionFinal .divSecFinal div {
+  width: 50%;
+  padding: 10px 0px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccionFinal .divSecFinal div p {
+  color: white;
+}
+
+.seccionFinal .divSecFinal div h1 {
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+}
+
+.seccionFinal .divSecFinal div .d-formulario {
+  background: red;
+}
+
+.seccionFinal .divSecFinal div div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.seccionFinal .divSecFinal div div input {
+  width: 250px;
+  padding: 10px 10px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.seccionFinal .divSecFinal div div input:invalid {
+  border: 3px solid #fa5757;
+}
+
+.seccionFinal .divSecFinal div div input:valid {
+  border: 3px solid #65f083;
+}
+
+.seccionFinal .divSecFinal div div .boton1:hover {
+  background: white !important;
+}
+
+.seccionFinal .divSecFinal div #campoMal {
+  background-color: #fa5757;
+  color: white;
+  width: 0%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 999px) {
+  .seccionFinal .divSecFinal div {
+    width: 100%;
+  }
+  .seccionFinal .divSecFinal div input {
+    width: 300px;
+  }
+}
+
+.headerFooter {
+  width: 100%;
+  background-color: #252b46;
+}
+
+.headerFooter .divHeaderFooter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.headerFooter .divHeaderFooter .logoFot {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerFooter .divHeaderFooter .logoFot img {
+  width: 100%;
+}
+
+.headerFooter .divHeaderFooter nav {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerFooter .divHeaderFooter nav a {
+  text-decoration: none;
+  color: #9194a1;
+  padding: 0px 20px;
+  font-size: 15px;
+}
+
+.headerFooter .divHeaderFooter .redes {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerFooter .divHeaderFooter .redes img {
+  padding: 0px 10px;
+}
+
+@media screen and (max-width: 1250px) {
+  .headerFooter .divHeaderFooter .logoFot {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .headerFooter .divHeaderFooter .logoFot img {
+    width: 30%;
+  }
+  .headerFooter .divHeaderFooter nav {
+    width: 100%;
+    padding: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headerFooter .divHeaderFooter nav a {
+    padding: 10px;
+  }
+  .headerFooter .divHeaderFooter .redes {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #252b46;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+footer .attribution {
+  color: white;
+}
+
+footer .attribution a {
+  text-decoration: none;
+  color: #5368df;
 }
 /*# sourceMappingURL=style.css.map */
