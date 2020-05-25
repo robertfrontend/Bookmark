@@ -893,6 +893,23 @@ html {
 
 .seccionCarousel {
   width: 100%;
+  position: relative;
+}
+
+.seccionCarousel .sesgo {
+  width: 34%;
+  height: 40vh;
+  background-color: #5368df;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  border-bottom-right-radius: 100px;
+}
+
+@media screen and (max-width: 999px) {
+  .seccionCarousel .sesgo {
+    display: none;
+  }
 }
 
 .seccionCarousel .padreCarousel {
@@ -1023,6 +1040,7 @@ html {
 
 .seccionCarousel .padreCarousel .divSecCarousel .carro-1 div img {
   width: 70%;
+  z-index: 30;
 }
 
 .seccionCarousel .padreCarousel .divSecCarousel .carro-1 div h1 {

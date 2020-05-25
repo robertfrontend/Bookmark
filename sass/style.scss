@@ -256,6 +256,19 @@ html {
 
 .seccionCarousel {
     width: 100%;
+    position: relative;
+    .sesgo{
+        width: 34%;
+        height: 40vh;
+        background-color: $azul;
+        position: absolute;
+        top: 200px;
+        left: 0;
+        border-bottom-right-radius: 100px;
+        @media screen and(max-width:$breckPoint999) {
+            display: none;
+        }
+    }
     .padreCarousel {
         width: 100%;
         display: flex;
@@ -313,6 +326,7 @@ html {
             flex-direction: row;
             padding: 30px 0px;
             margin: 30px 0px;
+
             .carro-1{
                 width: 100%;
                 display: flex;
@@ -328,8 +342,10 @@ html {
                     transition: all .2s;
                     img {
                         width: 70%;
+                        z-index: 30;
                         // transition: all .2s;
                     }
+
                     h1 {
                         font-size: 35px;
                         color: $negro;
@@ -344,6 +360,8 @@ html {
                         margin: 20px 0px;
                     }
                 }
+
+
             }
             @media screen and(max-width:$breckPoint999){
                 .carro-1{
