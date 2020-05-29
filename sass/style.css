@@ -1169,15 +1169,8 @@ html {
   border-radius: 20px;
 }
 
-@media screen and (max-width: 999px) {
-  .seccionDescargar .divSecDescarga .tarjeta {
-    width: 400px;
-    margin: 20px 0px !important;
-  }
-}
-
 .seccionDescargar .divSecDescarga .tarjeta div {
-  padding: 20px 0px;
+  padding: 15px 0px;
   text-align: center;
 }
 
