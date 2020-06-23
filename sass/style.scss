@@ -115,7 +115,6 @@ html {
                 }
             }
         }
-        
     }
     //seccion bienvenida
     .seccionBienvenida{
@@ -141,7 +140,6 @@ html {
                     .boton2{
                         margin: 10px 0px !important;
                     }
-
                     h1 {
                         font-size: 40px;
                         color: $negro;
@@ -360,8 +358,6 @@ html {
                         margin: 20px 0px;
                     }
                 }
-
-
             }
             @media screen and(max-width:$breckPoint999){
                 .carro-1{
@@ -376,7 +372,6 @@ html {
                     }
                 }
             }
-
         }
     }
 }
@@ -434,7 +429,6 @@ html {
             align-items: center;
             box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.123);
             border-radius: 20px;
-
             div {
                 padding: 15px 0px;
                 text-align: center;
@@ -453,7 +447,6 @@ html {
                 }
             }
         }
-
         @media screen and(max-width:$breckPoint999){
             justify-content: center;
             align-items: center;
@@ -465,7 +458,6 @@ html {
         
     }
 }
-
 
 .seccionFinal{
     width: 100%;
@@ -496,7 +488,6 @@ html {
             } 
             .d-formulario {
                 background: red;
-                
             }
              div{
                 width: 100%;
@@ -524,27 +515,7 @@ html {
                         background: white !important;
                     }
                 }
-
             }
-
-            // .divwar{
-            //     position: relative;
-            //     top: -5px;
-            //     width: 50%;
-            //     height: 3vh;
-            //     display: none;
-            //     text-align: center;
-            //     background-color: $rojo;
-            //     color: white;
-            //     margin-left: 62px;
-            //     font-size: 15px;
-            //     border-bottom-left-radius: 10px;
-            //     border-bottom-right-radius: 10px;
-            //     span {
-            //         position: relative;
-            //         top: -10px;
-            //     }
-            // }
             #campoMal{
                 background-color: $rojo;
                 color: white;
@@ -563,7 +534,6 @@ html {
     }
 }
 
-
 .headerFooter{
     width: 100%;
     background-color: $negro;
@@ -573,7 +543,6 @@ html {
         flex-direction: row;
         padding: 20px 0px;
         flex-wrap: wrap;
-
         .logoFot{
             width: 15%;
             display: flex;

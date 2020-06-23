@@ -32,7 +32,6 @@
     }
 }
 
-
 .seccionQuestion{
     width: 100%;
     .divQuestion {
@@ -68,7 +67,6 @@
             justify-content: center;
             align-items: center;
             //background-color: red;
-        
             // acordion 1
             .acordionCard-1{
                 @include acordionCard();
@@ -92,12 +90,10 @@
             .acordionCard-2{
                 @include acordionCard();
                 border-top: none;
-                
                 .divButtonAcordion2{
                     display: flex;
                     flex-direction: column;
                 }
-
                 .divOculto2{
                     padding: 10px;
                     p {
@@ -107,7 +103,6 @@
                     }
                 }
             }
-
             // acordion 3
             .acordionCard-3{
                 @include acordionCard();
@@ -117,7 +112,6 @@
                     display: flex;
                     flex-direction: column;
                 }
-                
                 .divOculto3{
                     padding: 10px;
                     p {
@@ -127,7 +121,6 @@
                     }
                 }
             }
-
             // acordion 4
             .acordionCard-4{
                 @include acordionCard();
@@ -189,11 +182,9 @@
                 }
                 .divOculto4{
                     text-align: left;
-
                 }
             }
         }
-        
     }
     .divBotonQuestion{
         width: 100%;
@@ -201,10 +192,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 }
-
 .activarAcord{
     height: auto !important;
 }
